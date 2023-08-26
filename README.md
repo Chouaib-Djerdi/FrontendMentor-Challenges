@@ -6,7 +6,9 @@ Improve my front-end skills by building real projects. Solve real-world HTML, CS
 
 ## ⏬ Demo
 
-qr-code-component : [live](https://chouaib-djerdi.github.io/FrontendMentor-Challenges/qr-code-component/){:target="_blank"}
+
+qr-code-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/qr-code-component/" target="_blank">live</a>
+
 
 
 ## 🚀 Run Locally
