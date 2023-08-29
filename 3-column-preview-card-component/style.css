@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins&family=Prata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  /* paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-gray);
+}
+
+/* Heading */
+h1 {
+  color: var(--light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+/* Paragrphs */
+p {
+  color: var(--transparent-white);
+  font-family: "Prata", serif;
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+/* Icons */
+img {
+  width: 60px;
+}
+
+/* Buttons */
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: solid;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border-radius: 32px;
+  width: 150px;
+  height: 50px;
+}
+
+main .element:nth-child(1) a {
+  color: var(--orange);
+  background-color: var(--light-gray);
+}
+
+main .element:nth-child(1) a:hover {
+  color: var(--light-gray);
+  background-color: var(--orange);
+}
+
+main .element:nth-child(2) a {
+  color: var(--cyan);
+  background-color: var(--light-gray);
+}
+
+main .element:nth-child(2) a:hover {
+  color: var(--light-gray);
+  background-color: var(--cyan);
+}
+
+main .element:nth-child(3) a {
+  color: var(--dark-cyan);
+  background-color: var(--light-gray);
+}
+
+main .element:nth-child(3) a:hover {
+  color: var(--light-gray);
+  background-color: var(--dark-cyan);
+}
+
+/* Wrapper */
+main {
+  display: flex;
+  width: 60%;
+  height: 500px;
+}
+
+/* Elements of Wrapper */
+main .element {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  flex: 1;
+}
+
+.element:nth-child(1) {
+  background-color: var(--orange);
+  border-radius: 6px 0 0 6px;
+}
+
+.element:nth-child(2) {
+  background-color: var(--cyan);
+}
+
+.element:nth-child(3) {
+  background-color: var(--dark-cyan);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Responsive Mobile  */
+@media only screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .element:nth-child(1) {
+    background-color: var(--orange);
+    border-radius: 6px 6px 0 0;
+  }
+
+  .element:nth-child(3) {
+    background-color: var(--dark-cyan);
+    border-radius: 0 0 6px 6px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
