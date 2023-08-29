@@ -8,7 +8,7 @@ Improve my front-end skills by building real projects. Solve real-world HTML, CS
 
 
 qr-code-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/qr-code-component/" target="_blank">live</a>
-
+3-column-preview-card-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/3-column-preview-card-component/" target="_blank">live</a>
 
 
 ## 🚀 Run Locally
