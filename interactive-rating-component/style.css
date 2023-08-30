@@ -25,6 +25,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-family: "Overpass", sans-serif;
   background-color: var(--very-dark-blue);
 }
@@ -61,7 +62,7 @@ main {
   height: 400px;
   background-color: var(--dark-blue);
   padding: 30px;
-  margin: 0 20px;
+  margin: 0 50px 20px;
   border-radius: 32px;
 }
 
