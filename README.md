@@ -11,6 +11,7 @@ qr-code-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Cha
 
 3-column-preview-card-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/3-column-preview-card-component/" target="_blank">live</a>
 
+interactive-rating-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/interactive-rating-component/" target="_blank">live</a>
 
 ## 🚀 Run Locally
 
