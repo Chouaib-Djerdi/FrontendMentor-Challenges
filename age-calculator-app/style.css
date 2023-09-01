@@ -45,17 +45,21 @@ body {
 
 hr {
   width: 85%;
+  height: 1px;
+  background-color: var(--light-grey);
+  border: none;
 }
 
 main {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  /* border: solid; */
+
   height: 500px;
   width: 45%;
   padding: 50px;
   border-radius: 16px 16px 144px 16px;
+  gap: 20px;
 }
 
 main h1 {
@@ -75,19 +79,43 @@ main .input-wrapper {
   gap: 20px;
 }
 
-main .input-wrapper input {
+main .input-wrapper input[type="number"] {
   width: 110px;
   height: 50px;
+  padding: 15px;
   font-weight: 800;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
   font-size: 20px;
   color: var(--smokey-grey);
 }
 
+main .input-wrapper input[type="number"]:focus {
+  border: 2px solid var(--light-grey);
+}
+
 main .input-wrapper label {
   display: block;
+  margin-bottom: 5px;
   text-transform: uppercase;
   font-family: "poppins";
   color: var(--smokey-grey);
   font-size: 12px;
   letter-spacing: 0.2rem;
+}
+
+main .btn-wrapper a:link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  background-color: var(--purple);
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
 }
