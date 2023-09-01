@@ -1,6 +1,7 @@
 const day_input = document.querySelector('input[name="day"]');
 const month_input = document.querySelector('input[name="month"]');
 const year_input = document.querySelector('input[name="year"]');
+const labels = document.querySelectorAll("label");
 
 const inputArray = [day_input, month_input, year_input];
 
@@ -30,6 +31,12 @@ function validateInput(input, minValue, maxValue, errorMessage) {
   const inputValue = Number(input.value);
   if (inputValue < minValue || inputValue > maxValue) {
     stat = false;
+    labels.forEach((label) => {
+      label.style.color = "var(--light-red)";
+    });
+    inputArray.forEach((input) => {
+      input.classList.add("error-style");
+    });
     input.insertAdjacentHTML(
       "afterend",
       `<p class="error-msg">${errorMessage}</p>`

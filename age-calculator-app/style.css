@@ -49,6 +49,7 @@ hr {
   height: 1px;
   background-color: var(--light-grey);
   border: none;
+  flex: 1;
 }
 
 main {
@@ -136,4 +137,37 @@ main .input-wrapper p {
 
 main .input-wrapper .error-style {
   border: 1px solid var(--light-red) !important;
+}
+
+.mobile-hr {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    width: 95%;
+    height: 450px;
+    padding: 15px;
+  }
+  main h1 {
+    font-size: 3.3rem;
+  }
+  main .input-wrapper {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  main .input-wrapper input[type="number"] {
+    width: 80px;
+  }
+  main .btn-wrapper a:link {
+    width: 50px;
+    height: 50px;
+  }
+  main .btn-wrapper img {
+    width: 25px;
+  }
+  .mobile-hr {
+    display: inline;
+  }
 }
