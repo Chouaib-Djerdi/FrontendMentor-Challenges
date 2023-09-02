@@ -13,6 +13,8 @@ qr-code-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Cha
 
 interactive-rating-component : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/interactive-rating-component/" target="_blank">live</a>
 
+age-calculator-app : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/age-calculator-app/" target="_blank">live</a>
+
 ## 🚀 Run Locally
 
 Clone the project
