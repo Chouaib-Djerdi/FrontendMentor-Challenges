@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--light-grayish-cyan);
+}
+
+main {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 350px;
+  width: 50%;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: var(--white);
+  gap: 10px;
+}
+
+main .choice-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main .choice-container label {
+  display: block;
+  font-size: 12px;
+  color: var(--dark-grayish-cyan);
+}
+
+main .choice-container input[type="number"] {
+  border: none;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  height: 40px;
+  width: 100%;
+  font-size: 22px;
+  padding: 0 15px;
+  border-radius: 6px;
+  text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main .choice-container input[type="number"]:focus {
+  outline-color: var(--strong-cyan);
+}
+
+.currency-wrap {
+  position: relative;
+}
+
+.currency-code {
+  position: absolute;
+  color: var(--grayish-cyan);
+  left: 15px;
+  top: 10px;
+}
+
+.text-currency {
+  padding: 10px 20px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+}
+
+.person-wrap {
+  position: relative;
+}
+
+.person-code {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.text-person {
+  padding: 10px 20px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+}
+
+main .choice-container .tip-wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+main .choice-container .tip-wrapper input {
+  flex: 1;
+}
+
+main .choice-container .tip-wrapper input[type="button"] {
+  cursor: pointer;
+  border: none;
+  font-size: 22px;
+  border-radius: 6px;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+}
+
+main .choice-container .tip-wrapper input[type="button"]:active {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+}
+
+main .result-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-cyan);
+  padding: 2rem;
+  border-radius: 20px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="choice-container">
+        <div class="bill-wrapper">
+          <label for="bill">Bill</label>
+          <div class="currency-wrap">
+            <img
+              src="images/icon-dollar.svg"
+              alt="icon-dollar"
+              class="currency-code"
+            />
+            <input type="number" name="bill" id="bill" class="text-currency" />
+          </div>
+        </div>
+        <label for="select-tip">Select Tip %</label>
+        <div class="tip-wrapper">
+          <input type="button" value="5%" />
+          <input type="button" value="10%" />
+          <input type="button" value="15%" />
+          <input type="button" value="25%" />
+          <input type="button" value="50%" />
+          <input type="number" name="" id="" placeholder="CUSTOM" />
+        </div>
+
+        <div class="people-wrapper">
+          <label for="number-people">Number of People</label>
+          <div class="person-wrap">
+            <img
+              src="images/icon-person.svg"
+              alt="icon-person"
+              class="person-code"
+            />
+            <input
+              type="number"
+              name="number-people"
+              id="number-people"
+              class="text-person"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="result-container">
+        <p>Tip Amount / person</p>
+        <p>0.00</p>
+        <p>Total / person</p>
+        <p>0.00</p>
+        <button>Reset</button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Chouaib Djerdi</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
