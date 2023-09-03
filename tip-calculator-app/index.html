@@ -40,13 +40,16 @@
           </div>
         </div>
         <label for="select-tip">Select Tip %</label>
+
         <div class="tip-wrapper">
-          <input type="button" value="5%" />
-          <input type="button" value="10%" />
-          <input type="button" value="15%" />
-          <input type="button" value="25%" />
-          <input type="button" value="50%" />
-          <input type="number" name="" id="" placeholder="CUSTOM" />
+          <div class="btn-input"><input type="button" value="5%" /></div>
+          <div class="btn-input"><input type="button" value="10%" /></div>
+          <div class="btn-input"><input type="button" value="15%" /></div>
+          <div class="btn-input"><input type="button" value="25%" /></div>
+          <div class="btn-input"><input type="button" value="50%" /></div>
+          <div class="btn-input">
+            <input type="number" name="" id="" placeholder="Custom" />
+          </div>
         </div>
 
         <div class="people-wrapper">
@@ -67,10 +70,23 @@
         </div>
       </div>
       <div class="result-container">
-        <p>Tip Amount / person</p>
-        <p>0.00</p>
-        <p>Total / person</p>
-        <p>0.00</p>
+        <div class="sum-view-wrapper">
+          <div class="summary-wrapper">
+            <div class="heading">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="price-wrapper"><h1>$0.00</h1></div>
+          </div>
+          <div class="summary-wrapper">
+            <div class="heading">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="price-wrapper"><h1>$0.00</h1></div>
+          </div>
+        </div>
+
         <button>Reset</button>
       </div>
     </main>
