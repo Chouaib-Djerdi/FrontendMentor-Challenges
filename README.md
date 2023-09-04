@@ -15,6 +15,9 @@ interactive-rating-component : <a href="https://chouaib-djerdi.github.io/Fronten
 
 age-calculator-app : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/age-calculator-app/" target="_blank">live</a>
 
+tip-calculator-app : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/tip-calculator-app/" target="_blank">live</a>
+
+
 ## 🚀 Run Locally
 
 Clone the project
