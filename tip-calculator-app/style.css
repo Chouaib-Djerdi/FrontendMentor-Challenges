@@ -15,6 +15,7 @@
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+  --light-red: hsl(0, 100%, 67%);
 }
 
 .attribution {
@@ -147,7 +148,7 @@ main .choice-container .tip-wrapper input[type="button"] {
   color: var(--white);
 }
 
-main .choice-container .tip-wrapper input[type="button"]:active {
+main .choice-container .tip-wrapper input[type="button"]:hover {
   color: var(--very-dark-cyan);
   background-color: var(--strong-cyan);
 }
@@ -191,6 +192,16 @@ main .result-container button {
   font-size: 16px;
 }
 
-main .result-container button:active {
+main .result-container button:hover {
   background-color: var(--very-light-grayish-cyan);
 }
+
+.error-style {
+  border: 1px solid var(--light-red) !important;
+}
+.error-msg {
+  margin-top: 7px;
+  font-size: 12px;
+  color: var(--light-red);
+}
+
