@@ -135,6 +135,13 @@ main .choice-container .tip-wrapper input {
   height: 35px;
 }
 
+main .choice-container .bill-wrapper input[type="number"]::placeholder {
+  color: var(--grayish-cyan);
+}
+main .choice-container .people-wrapper input[type="number"]::placeholder {
+  color: var(--grayish-cyan);
+}
+
 main .choice-container .tip-wrapper .btn-input {
   width: calc(33.33% - 7px);
 }
@@ -205,7 +212,7 @@ main .result-container button:hover {
   color: var(--light-red);
 }
 
-@media screen and (max-width:1295px){
+@media screen and (max-width: 1295px) {
   main {
     flex-direction: column;
     width: 100%;
