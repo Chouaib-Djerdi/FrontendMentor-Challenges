@@ -33,7 +33,7 @@ body {
 main {
   display: flex;
   height: 350px;
-  width: 50%;
+  width: 45%;
   padding: 1.5rem;
   border-radius: 20px;
   background-color: var(--white);
@@ -135,7 +135,7 @@ main .choice-container .tip-wrapper input {
 }
 
 main .choice-container .tip-wrapper .btn-input {
-  width: calc(33.33% - 20px);
+  width: calc(33.33% - 7px);
 }
 
 main .choice-container .tip-wrapper input[type="button"] {
@@ -158,7 +158,7 @@ main .result-container {
   flex-direction: column;
   background-color: var(--very-dark-cyan);
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 10px;
   justify-content: space-between;
 }
 
@@ -178,4 +178,19 @@ main .result-container .summary-wrapper p {
 main .result-container .summary-wrapper span {
   color: var(--grayish-cyan);
   font-size: 12px;
+}
+
+main .result-container button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  height: 40px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+main .result-container button:active {
+  background-color: var(--very-light-grayish-cyan);
 }
