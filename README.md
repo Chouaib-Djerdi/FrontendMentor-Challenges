@@ -17,6 +17,8 @@ age-calculator-app : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Ch
 
 tip-calculator-app : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/tip-calculator-app/" target="_blank">live</a>
 
+social-media-dashboard-with-theme-switcher : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/social-media-dashboard-with-theme-switcher-master/" target="_blank">live</a>
+
 
 ## 🚀 Run Locally
 
