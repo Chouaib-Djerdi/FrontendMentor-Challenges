@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  /* --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)); */
+  --Instagram: linear-gradient(to right, #f9dc5c, #8d6ad9);
+
+  --YouTube: hsl(348, 97%, 39%);
+  /* Dark Theme */
+  --Toggle-dark: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  /* Light theme */
+  --Toggle-light: hsl(230, 22%, 74%);
+
+  /* Dark Theme */
+
+  --Very-Dark-Blue: hsl(232, 19%, 15%); /* (Top BG Pattern) */
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%); /* (Card BG) */
+  --Desaturated-Blue: hsl(228, 34%, 66%); /* (Text) */
+  --White: hsl(0, 0%, 100%); /* (Text) */
+  --Very-Dark-Blue: hsl(230, 17%, 14%); /* (BG) */
+
+  /* Light Theme */
+
+  --White: hsl(0, 0%, 100%); /* BG */
+  --Very-Pale-Blue: hsl(225, 100%, 98%); /* (Top BG Pattern) */
+  --Light-Grayish-Blue: hsl(227, 47%, 96%); /* (Card BG) */
+  --Dark-Grayish-Blue: hsl(228, 12%, 44%); /* (Text) */
+  --Very-Dark-Blue: hsl(230, 17%, 14%); /* (Text) */
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  color: var(--Desaturated-Blue);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+}
+
+main {
+  display: grid;
+  width: 75%;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 10px;
+}
+
+.heading--1 {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading--1 h1 {
+  color: var(--White);
+}
+
+.heading--1 p {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--Desaturated-Blue);
+}
+
+h1 {
+  color: var(--White);
+}
+
+.element {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  width: 250px;
+  cursor: pointer;
+  background-color: var(--Dark-Desaturated-Blue);
+  border-radius: 4px;
+  gap: 20px;
+}
+
+.facebook {
+  border-top: 4px solid var(--Facebook);
+}
+
+.instagram {
+  /* border-top: 4px solid var(--Instagram); */
+  border-top: 4px solid transparent; /* Set the border width and make it transparent */
+  border-image: var(--Instagram) 1; /* Apply the gradient to the border-top */
+  border-radius: 4px;
+  border-image-slice: 1;
+}
+
+.youtube {
+  border-top: 4px solid var(--YouTube);
+}
+
+.twitter {
+  border-top: 4px solid var(--Twitter);
+}
+
+.element h1 {
+  font-size: 3rem;
+}
+
+.followers {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  /* font-weight: lighter; */
+  /* margin-bottom: 10px; */
+}
+
+.text {
+  color: var(--Desaturated-Blue);
+}
+
+.text-down {
+  color: var(--Bright-Red);
+  font-size: 12px;
+}
+.text-up {
+  color: var(--Lime-Green);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.element .username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.element .stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.heading--2 {
+  grid-column: 1/-1;
+}
+
+.element-over {
+  justify-self: center;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  width: 250px;
+  background-color: var(--Dark-Desaturated-Blue);
+  border-radius: 4px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.element-over img {
+  justify-self: end;
+}
+
+.element-over span {
+  /* align-self: end; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
