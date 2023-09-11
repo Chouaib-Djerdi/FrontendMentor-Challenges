@@ -29,6 +29,7 @@ main {
   width: 85%;
   padding: 5rem;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -63,7 +64,7 @@ main {
 
 .testimonial:last-child {
   grid-column: 4/5;
-  grid-row: 5/-1;
+  grid-row: 1/-1;
   background-color: var(--White);
   color: var(--Very-dark-blackish-blue);
 }
