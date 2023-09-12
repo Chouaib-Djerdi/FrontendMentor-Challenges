@@ -19,6 +19,7 @@ tip-calculator-app : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Ch
 
 social-media-dashboard-with-theme-switcher : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/social-media-dashboard-with-theme-switcher-master/" target="_blank">live</a>
 
+testimonials-grid-section : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/testimonials-grid-section/" target="_blank">live</a>
 
 ## 🚀 Run Locally
 
