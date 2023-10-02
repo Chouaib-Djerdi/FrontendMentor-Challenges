@@ -88,6 +88,12 @@ h3 {
   border-radius: 2rem;
 }
 
+.nav-item:last-child .nav-link:hover {
+  background-color: hsl(0, 0%, 100%, 0.5);
+  color: var(--White);
+  transition: background-color 0.3s ease;
+}
+
 /* First Section  */
 
 .header {
@@ -235,7 +241,6 @@ h3 {
   text-align: center;
   display: flex;
   justify-content: center;
-  /* gap: 1.5rem; */
 }
 
 .grid-testimonial {
@@ -323,8 +328,20 @@ footer {
   color: var(--Dark-moderate-cyan);
 }
 
+.footer-link:hover,
+.footer-link:active {
+  color: var(--White);
+  transition: color 0.3s ease;
+}
+
 .footer-social {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
+
+/* .footer-social:hover,
+.footer-social:active {
+  color: var(--White);
+  transition: color 0.3s ease;
+} */
