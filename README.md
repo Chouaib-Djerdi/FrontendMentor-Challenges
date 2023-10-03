@@ -21,6 +21,8 @@ social-media-dashboard-with-theme-switcher : <a href="https://chouaib-djerdi.git
 
 testimonials-grid-section : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/testimonials-grid-section/" target="_blank">live</a>
 
+sunnyside-agency-landing-page : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/sunnyside-agency-landing-page/" target="_blank">live</a>
+
 ## 🚀 Run Locally
 
 Clone the project
