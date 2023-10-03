@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  /* ### Primary */
+
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient(
+    hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+  );
+
+  /* ### Neutral */
+
+  /* ### Light Theme */
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  /* ### Dark Theme */
+
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue: hsl(236, 33%, 92%); /*hover*/
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+/* body {
+    max-width: 100%;
+}
+ */
+
+body::before {
+  content: "";
+  height: 25vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("images/bg-desktop-light.jpg");
+  background-size: cover;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: var(--Very-Light-Grayish-Blue);
+}
+
+main {
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+/* input task style  */
+
+.task-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.task-input-wrapper input[type="text"] {
+  height: 1rem;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+/* tasks list style  */
+
+.list-wrapper {
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border-bottom: 2px solid var(--Light-Grayish-Blue);
+  color: var(--Very-Dark-Desaturated-Blue);
+}
+
+.list-wrapper .task-wrapper:last-child {
+  border-bottom: none;
+}
+
+/* checkbox-style */
+
+/* filter-btn style  */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.clear-wrapper {
+  justify-content: space-between;
+  color: var(--Very-Dark-Grayish-Blue);
+  gap: 0;
+}
+
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.25rem;
+  background-color: var(--Very-Light-Gray);
+  border-radius: 6px;
+}
+
+.filter-wrapper a:hover,
+.filter-wrapper a:active {
+  color: var(--Bright-Blue);
+}
