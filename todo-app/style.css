@@ -52,16 +52,12 @@ body::before {
 }
 
 body {
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
   background-color: var(--Very-Light-Grayish-Blue);
 }
 
 main {
-  width: 90%;
+  max-width: 80%;
+  margin: 0 auto;
   margin-top: 3rem;
 }
 
@@ -147,4 +143,19 @@ a:visited {
 
 .completed {
   text-decoration-line: line-through;
+}
+
+button {
+  background-color: inherit;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  font-size: 20px;
 }
