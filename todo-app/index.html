@@ -17,6 +17,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Todo app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -38,39 +39,21 @@
         <input
           type="text"
           name="task-input"
-          id="task-input"
+          class="task-input"
           placeholder="Create a new todo"
         />
       </div>
       <div class="main-wrapper">
-        <div class="list-wrapper">
-          <div class="task-wrapper">
-            <input type="checkbox" name="complete" id="complete" />
-            <label for="complete">Jog around the pack 3x</label>
-          </div>
-          <div class="task-wrapper">
-            <input type="checkbox" name="complete" id="complete" />
-            <label for="complete">Jog around the pack 3x</label>
-          </div>
-          <div class="task-wrapper">
-            <input type="checkbox" name="complete" id="complete" />
-            <label for="complete">Jog around the pack 3x</label>
-          </div>
-          <div class="task-wrapper">
-            <input type="checkbox" name="complete" id="complete" />
-            <label for="complete">Jog around the pack 3x</label>
-          </div>
-          <div class="clear-wrapper task-wrapper">
-            <p>5 items left</p>
-            <a href="">Clear Completed</a>
-          </div>
+        <div class="list-wrapper"></div>
+        <div class="clear-wrapper task-wrapper">
+          <p>5 items left</p>
+          <a href="">Clear Completed</a>
         </div>
-
-        <div class="filter-wrapper">
-          <a href="">All</a>
-          <a href="">Active</a>
-          <a href="">Completed</a>
-        </div>
+      </div>
+      <div class="filter-wrapper">
+        <a href="">All</a>
+        <a href="">Active</a>
+        <a href="">Completed</a>
       </div>
     </main>
 

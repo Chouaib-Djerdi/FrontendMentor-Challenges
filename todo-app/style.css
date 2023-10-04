@@ -41,7 +41,7 @@
 
 body::before {
   content: "";
-  height: 25vh;
+  height: 35vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -92,7 +92,7 @@ main {
 
 /* tasks list style  */
 
-.list-wrapper {
+.main-wrapper {
   margin: 1rem 0;
   background-color: #fff;
   border-radius: 6px;
@@ -100,10 +100,15 @@ main {
 .task-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
   padding: 1.25rem;
   border-bottom: 2px solid var(--Light-Grayish-Blue);
   color: var(--Very-Dark-Desaturated-Blue);
+}
+
+.todo-wrapper {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .list-wrapper .task-wrapper:last-child {
@@ -138,4 +143,8 @@ a:visited {
 .filter-wrapper a:hover,
 .filter-wrapper a:active {
   color: var(--Bright-Blue);
+}
+
+.completed {
+  text-decoration-line: line-through;
 }
