@@ -56,7 +56,8 @@ body {
 }
 
 main {
-  max-width: 80%;
+  max-width: 50%;
+  /* min-width: 80%; */
   margin: 0 auto;
   margin-top: 3rem;
 }
