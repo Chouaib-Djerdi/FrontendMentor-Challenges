@@ -23,6 +23,8 @@ testimonials-grid-section : <a href="https://chouaib-djerdi.github.io/FrontendMe
 
 sunnyside-agency-landing-page : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/sunnyside-agency-landing-page/" target="_blank">live</a>
 
+To-Do-App : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/todo-app/" target="_blank">live</a>
+
 ## 🚀 Run Locally
 
 Clone the project
