@@ -25,6 +25,8 @@ sunnyside-agency-landing-page : <a href="https://chouaib-djerdi.github.io/Fronte
 
 To-Do-App : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/todo-app/" target="_blank">live</a>
 
+Advice-Generator-App : <a href="https://chouaib-djerdi.github.io/FrontendMentor-Challenges/advice-generator-app/" target="_blank">live</a>
+
 ## 🚀 Run Locally
 
 Clone the project
