@@ -38,7 +38,9 @@ body {
 .container {
   background-color: var(--Dark-Grayish-Blue);
   padding: 2rem 1.5rem 4rem;
-  width: 90%;
+  width: 100%;
+  margin: 0 2rem;
+
   border-radius: 0.5rem;
 
   display: flex;
@@ -68,4 +70,16 @@ body {
   height: 4rem;
   border-radius: 100%;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.generator-btn:hover {
+  /* color: rgba(255, 255, 255, 1); */
+  box-shadow: 1px 1px 15px var(--Neon-Green);
+}
+
+@media (max-width: 1920px) {
+  .container {
+    width: 600px;
+  }
 }
